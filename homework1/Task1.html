@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Додавання викладача
+    </title>
+</head>
+<body>
+<h1>
+    Форма додавання викладача
+</h1>
+<form>
+    <label for="fullname">
+        Повне імʼя:
+    </label><br>
+    <input type="text" id="fullname"name="fullname" required><br><br>
+
+    <label>Стать:</label><br>
+    <input type="radio" id="male" name="gender" value="Чоловіча" required>
+    <label for="male">
+        Чоловіча
+    </label><br>
+
+    <input type="radio" id="female" name="gender" value="Жіноча" required>
+    <label for="female">
+        Жіноча
+    </label><br>
+
+    <input type="radio" id="other" name="gender" value="Чоловіча" required>
+    <label for="other">
+        Інше
+    </label><br><br>
+
+
+    <label for="birthdaydate">
+        Дата народження:
+    </label><br>
+    <input type="date" id="birthdaydate" name="birthdaydate" required><br><br>
+
+    <label for="email">
+        Email:
+    </label><br>
+    <input type="text" id="email" name="email" required><br><br>
+
+    <label for="number">
+        Телефон:
+    </label><br>
+    <input type="text" id="number"name="number" required><br><br>
+
+    <label for="color">
+        Колір фону:
+    </label><br>
+    <input type="color" id="color"name="color" required><br><br>
+
+    <label for="country">
+        Країна:
+    </label><br>
+    <select id="country"name="country" required>
+    <option value=""></option>
+    <option value="Україна">
+        Україна
+    </option>
+    <option value="Італія">
+        Італія
+    </option>
+    <option value="Польща">
+        Польща
+    </option>
+    <option value="Австрія">
+        Австрія
+    </option>
+    <option value="Вірменія">
+        Вірменія
+    </option>
+    </select><br><br>
+
+    <label for="sity">
+        Місто:
+    </label><br>
+    <input type="text" id="sity"name="sity" required><br><br>
+
+    <label for="comment">
+        Коментар:
+    </label><br>
+    <textarea id="comment" name="comment" rows="4" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Додати викладача">
+</form>
+</body>
+</html>
