@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Кошик покупок</title>
+    <link rel = "stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="container">
+    <div class="addSide">
+        <input type="text" placeholder="Назва товару">
+        <button class="addButton">Додати</button>
+
+        <div class="product">
+            <span class="tomatoes">Помідори</span>
+            <button class="status">Не куплено</button>
+        </div>
+
+        <div class="product">
+            <span class="productName">Печиво</span>
+            <div class="buttons">
+                <button class="minus" data-tooltip="Зменшити кількість">−</button>
+                <span>2</span>
+                <button class="plus" data-tooltip="Збільшити кількість">+</button>
+                <button class="status" data-tooltip="Позначити як куплене">Куплено</button>
+                <button class="remove" data-tooltip="Видалити товар">×</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <span class="productName">Сир</span>
+            <div class="buttons">
+                <button class="minus" data-tooltip="Зменшити кількість">−</button>
+                <span>1</span>
+                <button class="plus" data-tooltip="Збільшити кількість">+</button>
+                <button class="status" data-tooltip="Позначити як куплене">Куплено</button>
+                <button class="remove" data-tooltip="Видалити товар">×</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="basket">
+        <h3>Залишилося</h3>
+        <div class="tags">
+            <span>Печиво 2</span>
+            <span>Сир 1</span>
+        </div>
+
+        <h3>Куплено</h3>
+        <div class="tags">
+            <span><s>Помідори 2</s></span>
+        </div>
+    </div>
+</div>
+
+<div class="badge">
+    <div class="bTitle">Buy List</div>
+    <div class="bName">Created by:<br><strong>Olha Maksymovych</strong></div>
+</div>
+
+</body>
+</html>
