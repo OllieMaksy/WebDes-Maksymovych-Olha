@@ -1,0 +1,104 @@
+
+body {
+    font-family: Georgia, sans-serif;
+    margin: 50px;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center; /* горизонтальне центрування */
+    padding: 32px;  /* відступи  */
+}
+
+.weather-container {
+    background: #fff;
+    padding: 32px;
+    border-radius: 16px;  /* заокруглення */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /*тінь*/
+    max-width: none;
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    gap: 60px; /*відстань між кнопками */
+    margin-bottom: 24px; /* відступ знизу */
+}
+
+.search-box input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #d3c0c0;  /*товщина рамки, стиль, колір */
+    border-radius: 8px;
+}
+
+.search-box button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer; /* додає руку при наведенні */
+}
+
+.geolocation-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.geolocation-info .text {
+    line-height: 1.4; /* відстань між рядками */
+}
+
+.geolocation-info .temp {
+    font-size: 32px;
+    font-weight: bold; /* жирний шрифт */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 16px; /* нижній відступ */
+}
+
+.forecast {
+    display: flex;
+    overflow-x: auto; /* дозволяє скролити горизонтально */
+    scroll-snap-type: x mandatory; /*привʼязується до попереднього елемента */
+    gap: 8px;
+    padding-bottom: 16px;
+}
+
+.forecast::-webkit-scrollbar {
+    height: 6px;
+}
+
+.forecast::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+.day-card {
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: 12px;
+    flex: 0 0 auto; /* не дає розтягуватись */
+    width: 100px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.day-card .icon {
+    font-size: 24px;
+    margin: 14px 14px; /* зовнішній відступ */
+}
+
+.day-card .day {
+    font-weight: bold;
+}
+
+.day-card .night {
+    font-size: 14px;
+    color: #666;
+}
